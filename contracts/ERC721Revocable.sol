@@ -31,7 +31,7 @@ contract ERC721Revocable is ERC721, Ownable {
   }
 
   function revoke(uint256 tokenId) external {
-    require(block.timestamp < revocable[tokenId], "Revocable: too late to revoke this token");
+    require(block.timestamp < revocable[tokenId], "ERC721Revocable: token has been released");
     revocable[tokenId] = 0;
     _burn(tokenId);
   }
