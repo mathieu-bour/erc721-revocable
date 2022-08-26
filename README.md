@@ -5,7 +5,7 @@
 
 OpenZeppelin's ERC721 contract with an additional revocableMintTo which creates revocable ERC721 tokens.
 
-Demo version of the contract is available at [0xaBF6a1c0FBb9f606025874461178991B0A7Faa49](https://mumbai.polygonscan.com/address/0xaBF6a1c0FBb9f606025874461178991B0A7Faa49).
+Demo version of the contract is available at [0xa98d37675aDd1c4B15942836Ecd210BedC48c058](https://mumbai.polygonscan.com/address/0xa98d37675aDd1c4B15942836Ecd210BedC48c058).
 
 > Use case: allow new web3 users to mint NFTs without requiring them to own any cryptocurrency.
 

@@ -7,13 +7,16 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 /**
  * @title ERC721Revocable
  * @author Mathieu "Windyy" Bour
- * @dev Basic revocable ERC721 tokens. Use case: allow new web3 users to mint NFTs without requiring them to own any cryptocurrency.
+ * @dev Basic revocable ERC721 tokens. Use case: allow new web3 users to mint NFTs without requiring them
+ * to own any cryptocurrency.
  */
 contract ERC721Revocable is ERC721, Ownable {
-  uint256 tracker = 0;
-  mapping(uint256 => uint256) revocable;
+  uint256 private tracker = 0;
+  mapping(uint256 => uint256) private revocable;
 
-  constructor() ERC721("Revocable", "REV") {}
+  constructor() ERC721("Revocable", "REV") {
+    // We do not need to do anything here
+  }
 
   function mintTo(address account) public returns (uint256) {
     uint256 tokenId = tracker++;
