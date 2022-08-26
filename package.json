@@ -2,6 +2,30 @@
   "name": "@mathieu-bour/erc721-credit-card-burnable",
   "description": "OpenZeppelin's ERC721 contract with an additional revocableMintTo which creates revocable ERC721 tokens.",
   "version": "0.0.1",
+  "homepage": "https://github.com/mathieu-bour/erc721-revocable#readme",
+  "bugs": "https://github.com/mathieu-bour/erc721-revocable/issues",
+  "license": "MIT",
+  "maintainers": [
+    "Mathieu Bour <mathieu.tin.bour@gmail.com> (https://github.com/mathieu-bour)"
+  ],
+  "files": [
+    "dist/**"
+  ],
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "repository": "github:mathieu-bour/erc721-revocable",
+  "scripts": {
+    "clean": "hardhat clean && rimraf dist/",
+    "format": "prettier --write '**/*.{js,jsx,ts,tsx,css,less,sass,scss,json,json5,yml,yaml,md,mdx,graphql,sol}'",
+    "format:check": "prettier --check '**/*.{js,jsx,ts,tsx,css,less,sass,scss,json,json5,yml,yaml,md,mdx,graphql,sol}'",
+    "lint": "solhint 'contracts/**/*.sol'",
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "test:coverage": "hardhat coverage",
+    "test:gas": "REPORT_GAS=true hardhat test",
+    "deploy": "hardhat run scripts/deploy.ts",
+    "build": "pnpm clean && pnpm compile && tsc -p tsconfig.package.json"
+  },
   "devDependencies": {
     "@ethersproject/abi": "^5.7.0",
     "@ethersproject/bytes": "^5.7.0",
