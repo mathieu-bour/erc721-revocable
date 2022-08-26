@@ -1,5 +1,8 @@
 # ERC721Revocable
 
+![GitHub License](https://img.shields.io/github/license/mathieu-bour/erc721-revocable?style=for-the-badge)
+![Codecov](https://img.shields.io/codecov/c/gh/assets-club/smart-contracts?style=for-the-badge&token=oW4DQ9MuUh)
+
 OpenZeppelin's ERC721 contract with an additional revocableMintTo which creates revocable ERC721 tokens.
 
 Demo version of the contract is available at [0xaBF6a1c0FBb9f606025874461178991B0A7Faa49](https://mumbai.polygonscan.com/address/0xaBF6a1c0FBb9f606025874461178991B0A7Faa49).
@@ -15,4 +18,3 @@ Basic flow:
    dispute or if the card is fraudulent, etc.).
 
 This example is configured to deploy on the Mumbai Polygon Testnet.
-
