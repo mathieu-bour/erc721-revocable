@@ -1,7 +1,7 @@
 # ERC721Revocable
 
 ![GitHub License](https://img.shields.io/github/license/mathieu-bour/erc721-revocable?style=for-the-badge)
-![Codecov](https://img.shields.io/codecov/c/gh/assets-club/smart-contracts?style=for-the-badge&token=oW4DQ9MuUh)
+![Codecov](https://img.shields.io/codecov/c/gh/mathieu-bour/erc721-revocable?style=for-the-badge&token=llXOqvsAmc)
 
 OpenZeppelin's ERC721 contract with an additional revocableMintTo which creates revocable ERC721 tokens.
 
