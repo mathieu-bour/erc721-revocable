@@ -1,8 +1,8 @@
 import { config as loadConfig } from 'dotenv';
 import { HardhatUserConfig } from 'hardhat/config';
+import set from 'lodash/set';
 import { join } from 'path';
 import '@nomicfoundation/hardhat-toolbox';
-import set from "lodash/set";
 
 loadConfig({ path: join(process.cwd(), '.env.local') });
 
@@ -13,7 +13,7 @@ const config: HardhatUserConfig = {
       optimizer: {
         enabled: true,
       },
-    }
+    },
   },
 
   typechain: {
@@ -29,13 +29,13 @@ const config: HardhatUserConfig = {
       url: 'https://matic-mumbai.chainstacklabs.com',
       chainId: 80001,
       accounts: process.env.MUMBAI_PRIVATE_KEY ? [process.env.MUMBAI_PRIVATE_KEY] : [],
-    }
+    },
   },
-
 
   gasReporter: {
     enabled: Boolean(process.env.REPORT_GAS),
     currency: 'USD',
+    token: 'MATIC',
     coinmarketcap: process.env.COINMARKETCAP_API_KEY,
   },
 };
