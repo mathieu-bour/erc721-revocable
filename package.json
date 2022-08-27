@@ -1,5 +1,5 @@
 {
-  "name": "@mathieu-bour/erc721-credit-card-burnable",
+  "name": "@mathieu-bour/erc721-revocable",
   "description": "OpenZeppelin's ERC721 contract with an additional revocableMintTo which creates revocable ERC721 tokens.",
   "version": "0.0.1",
   "homepage": "https://github.com/mathieu-bour/erc721-revocable#readme",
